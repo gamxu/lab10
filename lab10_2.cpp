@@ -1,7 +1,21 @@
 #include<iostream>
 using namespace std;
 
-//Write the function printO() here
+int printO(int row, int amount)
+{
+	if(row<=0 || amount<=0){
+		cout << "Invalid input\n";
+	}else{ 
+		for(int i=0; i<row; i++){
+			for(int j=0; j<amount; j++){
+				cout << "O";
+			}
+			cout << '\n';
+		}
+	}
+	return 0;
+}
+
 
 int main(){
 	
