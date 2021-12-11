@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){	
-	
+
 	int year=1;
-	double loan, inter, pay, total,rate;
+	double loan, inter, pay, total, rate;
 	cout << "Enter initial loan: ";
 	cin >> loan;
 	cout << "Enter interest rate per year (%): ";
@@ -36,6 +36,7 @@ int main(){
 
 		if(pay>total) pay=total;
 		cout << setw(13) << left << pay;
+
 		loan=total-pay;
 		cout << setw(13) << left << loan;
 		cout << "\n";	
